@@ -1,0 +1,20 @@
+.button {
+  border: none;
+  outline: none;
+  color: $white;
+  border-radius: 20px;
+  background: rgb(48, 211, 92);
+  background: linear-gradient(
+    90deg,
+    rgba(48, 211, 92, 1) 0%,
+    rgba(48, 211, 92, 1) 15%,
+    rgba(42, 182, 217, 1) 100%
+  );
+  cursor: pointer;
+  padding: 10px 30px;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.6;
+}

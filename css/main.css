@@ -128,6 +128,22 @@ h4 {
   }
 }
 
+.button {
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 20px;
+  background: #30d35c;
+  background: linear-gradient(90deg, #30d35c 0%, #30d35c 15%, #2ab6d9 100%);
+  cursor: pointer;
+  padding: 10px 30px;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
 * {
   box-sizing: border-box;
 }
