@@ -18,24 +18,29 @@
     <link rel="stylesheet" href="./css/helpers.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <img src="./images/logo.svg" alt="easybank logo" class="logo" />
+    <header class="main-header">
+      <div class="container header">
+        <div>
+          <img src="./images/logo.svg" alt="easybank logo" class="logo" />
+        </div>
+        <nav>
+          <ul class="menu-header">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </nav>
+        <div><button class="button">Request Invite</button></div>
+        <div class="header-hamburger">
+          <img src="./images/icon-hamburger.svg" alt="icon-hamburger" />
+        </div>
       </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Careers</a></li>
-        </ul>
-      </nav>
-      <div><button class="button">Request Invite</button></div>
     </header>
     <main>
-      <section id="home">
-        <div>
+      <section id="home" class="home">
+        <div class="home-title">
           <h1>
             Next generation digital banking
           </h1>
@@ -46,7 +51,7 @@
           </p>
           <button class="button">Request Invite</button>
         </div>
-        <div>
+        <div class="home-bg">
           <img src="./images/image-mockups.png" alt="image-mockups" />
         </div>
       </section>
@@ -96,7 +101,7 @@
         <div class="cards-articles">
           <div class="card-article">
             <div>
-              <img src="./images/image-currency.jpg" alt="image-currency" />
+              <!-- <img src="./images/image-currency.jpg" alt="image-currency" /> -->
             </div>
             <div>
               <small>By Claire Robinson</small><br />
@@ -109,7 +114,7 @@
           </div>
           <div class="card-article">
             <div>
-              <img src="./images/image-restaurant.jpg" alt="image-restaurant" />
+              <!-- <img src="./images/image-restaurant.jpg" alt="image-restaurant" /> -->
             </div>
             <div>
               <small> By Wilson Hutton</small><br />
@@ -124,7 +129,7 @@
           </div>
           <div class="card-article">
             <div>
-              <img src="./images/image-plane.jpg" alt="image-plane" />
+              <!-- <img src="./images/image-plane.jpg" alt="image-plane" /> -->
             </div>
             <div>
               <small> By Wilson Hutton</small><br />
@@ -139,7 +144,7 @@
           </div>
           <div class="card-article">
             <div>
-              <img src="./images/image-plane.jpg" alt="image-plane" />
+              <!-- <img src="./images/image-plane.jpg" alt="image-plane" /> -->
             </div>
             <div>
               <small>By Claire Robinson</small><br />
@@ -163,7 +168,7 @@
             <img src="./images/logo.svg" alt="logo" />
           </div>
           <div>
-            <ul>
+            <ul class="menu-social">
               <li>
                 <a href=""
                   ><img src="./images/icon-facebook.svg" alt="icon-facebook"
@@ -193,7 +198,7 @@
           </div>
         </div>
         <div>
-          <ul>
+          <ul class="menu-footer">
             <li><a href="">About Us</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="">Blog</a></li>
@@ -208,10 +213,12 @@
         </div>
       </div>
       <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </p>
       </div>
     </footer>
   </body>
