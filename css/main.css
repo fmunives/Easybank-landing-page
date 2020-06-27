@@ -1,3 +1,133 @@
+a,
+p,
+span,
+small {
+  color: #9698a6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #2d314d;
+}
+
+a,
+p,
+span,
+button {
+  font-size: 0.75rem;
+}
+@media (min-width: 568px) {
+  a,
+p,
+span,
+button {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 768px) {
+  a,
+p,
+span,
+button {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 992px) {
+  a,
+p,
+span,
+button {
+    font-size: 0.95rem;
+  }
+}
+@media (min-width: 1200px) {
+  a,
+p,
+span,
+button {
+    font-size: 1rem;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+@media (min-width: 568px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+@media (min-width: 568px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 1.9rem;
+  }
+}
+
+h3,
+h4 {
+  font-size: 1.1rem;
+}
+@media (min-width: 568px) {
+  h3,
+h4 {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) {
+  h3,
+h4 {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 992px) {
+  h3,
+h4 {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  h3,
+h4 {
+    font-size: 1.5rem;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
