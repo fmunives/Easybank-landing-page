@@ -265,7 +265,7 @@
   margin: 0 auto;
 
   @media (min-width: 568px) {
-    width: 85.75%;
+    width: 87.5%;
   }
   @media (min-width: 768px) {
     width: 85%;
@@ -283,15 +283,29 @@
   margin: 0 0 0 auto;
 
   @media (min-width: 568px) {
-    width: 92.75%;
+    width: 93.75%;
   }
   @media (min-width: 768px) {
-    width: 90%;
+    width: 92.5%;
   }
   @media (min-width: 992px) {
-    width: 87.5%;
+    width: 91.25%;
   }
   @media (min-width: 1200px) {
-    width: 85%;
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-md-left {
+    width: 92.5%;
+    margin: 0 0 0 auto;
+
+    @media (min-width: 992px) {
+      width: 91.25%;
+    }
+    @media (min-width: 1200px) {
+      width: 90%;
+    }
   }
 }
