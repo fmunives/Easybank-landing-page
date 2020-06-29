@@ -7698,6 +7698,15 @@
     padding-bottom: 12rem;
   }
 }
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .text-md-right {
+    text-align: right;
+  }
+}
 .container {
   width: 90%;
   margin: 0 auto;

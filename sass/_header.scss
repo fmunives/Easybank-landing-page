@@ -1,0 +1,85 @@
+.menu-header,
+.menu-footer,
+.menu-social {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    margin-right: 1em;
+  }
+
+  & :last-child {
+    margin-right: 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+}
+
+.menu-header {
+  display: none;
+  margin-bottom: 0;
+  background: #fff;
+
+  a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+    display: inline-block;
+    height: 45px;
+
+    // TODO hover gradiente border bottom
+
+    // &:hover::after {
+    //   content: "";
+    //   display: inline-block;
+    //   position: absolute;
+    //   bottom: 5px;
+    //   height: 3px;
+    //   width: 50px;
+    //   background: red;
+    // }
+  }
+
+  @media (min-width: 992px) {
+    display: flex;
+  }
+}
+
+.main-header {
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  z-index: 2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+  @media (min-width: 992px) {
+    padding: 0;
+  }
+
+  .button {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: inline-block;
+    }
+  }
+
+  .header-hamburger {
+    display: block;
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+#features {
+  background: $light-grayish-blue;
+  position: inherit;
+  z-index: -2;
+  transform: translateY(-67px);
+
+  .feature-title {
+    text-align: center;
+
+    @media (min-width: 992px) {
+      text-align: left;
+      width: 60%;
+    }
+  }
+
+  .cards-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // font-weight: normal;
+
+    .card-feature {
+      margin-right: 1em;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1em;
+
+      @media (min-width: 768px) {
+        width: 245px;
+        text-align: left;
+      }
+    }
+    & :last-child {
+      margin-right: 0;
+    }
+  }
+}
