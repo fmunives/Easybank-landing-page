@@ -37,11 +37,33 @@
           </ul>
         </nav>
         <div><button class="button">Request Invite</button></div>
-        <div class="header-hamburger">
-          <img src="./images/icon-hamburger.svg" alt="icon-hamburger" />
+        <div id="button-menu" onclick="toogleMenu()" class="header-hamburger">
+          <img
+            class="active"
+            id="hamburger"
+            src="./images/icon-hamburger.svg"
+            alt="icon-hamburger"
+          />
+          <img
+            class="hidden"
+            id="close"
+            src="./images/icon-close.svg"
+            alt="icon-close"
+          />
         </div>
       </div>
     </header>
+    <div id="menu-clon" class="menu-clon-container hidden">
+      <nav class="">
+        <ul class="menu-clon">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Careers</a></li>
+        </ul>
+      </nav>
+    </div>
     <main>
       <section id="home">
         <div class="container-md-left home">
@@ -237,5 +259,52 @@
         </div>
       </div>
     </footer>
+    <script>
+      function toogleMenu() {
+        const closeBtn = document.getElementById("close");
+        const hamburgerBtn = document.getElementById("hamburger");
+        const menuClon = document.getElementById("menu-clon");
+
+        if (hamburgerBtn.className === "active") {
+          hideHamburger();
+          showClose();
+          showMenu();
+        } else {
+          hideClose();
+          showHamburger();
+          hideMenu();
+        }
+
+        function hideHamburger() {
+          hamburgerBtn.classList.remove("active");
+          hamburgerBtn.classList.add("hidden");
+        }
+
+        function showHamburger() {
+          hamburgerBtn.classList.remove("hidden");
+          hamburgerBtn.classList.add("active");
+        }
+
+        function showClose() {
+          closeBtn.classList.remove("hidden");
+          closeBtn.classList.add("active");
+        }
+
+        function hideClose() {
+          closeBtn.classList.remove("active");
+          closeBtn.classList.add("hidden");
+        }
+
+        function showMenu() {
+          menuClon.classList.add("active");
+          menuClon.classList.remove("hidden");
+        }
+
+        function hideMenu() {
+          menuClon.classList.add("hidden");
+          menuClon.classList.remove("active");
+        }
+      }
+    </script>
   </body>
 </html>

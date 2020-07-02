@@ -29,18 +29,30 @@
     transition: all 0.2s ease;
     display: inline-block;
     height: 45px;
+    position: relative;
 
     // TODO hover gradiente border bottom
 
-    // &:hover::after {
-    //   content: "";
-    //   display: inline-block;
-    //   position: absolute;
-    //   bottom: 5px;
-    //   height: 3px;
-    //   width: 50px;
-    //   background: red;
-    // }
+    &:hover {
+      color: $dark-blue;
+    }
+
+    &:hover::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background: rgb(48, 211, 92);
+      background: linear-gradient(
+        90deg,
+        rgba(48, 211, 92, 1) 0%,
+        rgba(48, 211, 92, 1) 15%,
+        rgba(42, 182, 217, 1) 100%
+      );
+    }
   }
 
   @media (min-width: 992px) {
@@ -61,7 +73,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 15px 0;
 
   @media (min-width: 992px) {
     padding: 0;
@@ -77,9 +89,94 @@
 
   .header-hamburger {
     display: block;
+    cursor: pointer;
 
     @media (min-width: 992px) {
       display: none;
+    }
+  }
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-clon-container {
+  position: fixed;
+  top: 54px;
+  background: rgb(45, 49, 77);
+  background: linear-gradient(
+    180deg,
+    rgba(45, 49, 77, 1) 0%,
+    rgba(45, 49, 77, 0) 100%
+  );
+  z-index: 3;
+  width: 100%;
+  padding: 1em;
+  height: 100vh;
+  transition: all 1s ease-in-out;
+  animation: fadeinDown 0.5s;
+
+  @keyframes fadeinDown {
+    from {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+
+  .menu-clon {
+    padding-left: 0;
+    list-style: none;
+    background-color: $white;
+    padding: 1em;
+    margin: 0;
+    border-radius: 5px;
+    text-align: center;
+
+    li {
+      margin-bottom: 2em;
+    }
+
+    & :last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $dark-blue;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.2s ease;
+      position: relative;
+
+      &:hover::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background: rgb(48, 211, 92);
+        background: linear-gradient(
+          90deg,
+          rgba(48, 211, 92, 1) 0%,
+          rgba(48, 211, 92, 1) 15%,
+          rgba(42, 182, 217, 1) 100%
+        );
+      }
     }
   }
 }
